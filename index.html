@@ -4,39 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <title>Primer trabajo de CoderHouse</title>
+        <title>TecnoTecnología</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">inicio</a></li>
-                    <li><a href="pages/proyectos.html">proyectos</a></li>
-                    <li><a href="pages/trabajos.html">trabajos</a></li>
-                    <li><a href="pages/sobre-mi.html">sobre mi</a></li>
-                    <li><a href="pages/contactos.html">contactos</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="header--container">
+            <header>
+                <div class="img--logo-container">
+                    <img src="images/logo.jpeg" alt="Logo de la Empresa">
+                </div>
+
+                <div class="navbar--container">
+                    <span class="navbar--icon openMenu" id="openMenu" onclick="openMenu()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></span>
+                    <span class="navbar--icon closeMenu" id="closeMenu" onclick="closeMenu()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
+                    <nav class="header--navbar" id="header--navbar">
+                        <ul class="list--container">
+                            <li class="links link1"><a href="index.html">Inicio</a></li>
+                            <li class="links link2"><a href="pages/Productos.html">Productos</a></li>
+                            <li class="links link3"><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                            <li class="links link4"><a href="pages/contactanos.html">Contactanos</a></li>
+                            <li class="links link5"><a href="pages/"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
 
         <main>
-            <h1>Inicio</h1>
-            <h1>Inicio 2</h1>
-
-            <section>
-                <h2 id="subtitulo_1">Santiago Minotti</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aperiam quasi harum accusantium odio porro vitae suscipit dolor aut, ullam sint, corporis, adipisci nesciunt numquam placeat explicabo mollitia alias labore tenetur!</p>
-            </section>
-
-            <div>
-                <p class="paragraph_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dolores repellat tempore facere voluptate cumque sequi libero facilis eum ratione totam est modi fugit nobis earum, rem ut, at quaerat!</p>
-            </div>
+            
         </main>
 
         <footer>
-            <p>todos los derechos reservados</p>
+            
         </footer>
 
-
+        <script src="js/main.js"></script>
     </body>
 </html>
