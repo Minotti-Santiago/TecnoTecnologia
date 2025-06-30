@@ -13,6 +13,8 @@ body{
     flex-direction: column;
 }
 
+/*--------------------------------------------HEADER SECTION--------------------------------------------*/
+
 .header--container{
     background-color: #181818;
     width: 100%;
@@ -22,6 +24,12 @@ body{
 
 .img--logo-container img{
     width: 60px;
+}
+
+.img--logo-container{
+    height: 10vh;
+    width: 20vw;
+    margin-top: 5px;
     margin-left: 5px;
 }
 
@@ -46,6 +54,7 @@ header{
     top: 0;
     right: 0;
     transition: .5s;
+    width: 0%;
 }
 
 .list--container{
@@ -78,3 +87,65 @@ header{
     display: none;
 }
 
+/*--------------------------------------------MAIN SECTION--------------------------------------------*/
+
+
+
+/*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
+@media screen and (min-width:700px){
+
+    .navbar--icon{
+        top: 25px;
+        right: 30px;
+    }
+    
+    .img--logo-container img{
+        width: 80px;
+    }
+}
+
+@media screen and (min-width:900px){
+    .navbar--icon{
+        display: none;
+    }
+
+    .header--navbar{
+        width: 100%;
+        flex-direction: row;
+        height: 10vh;
+        position: relative;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list--container{
+        flex-direction: row;
+        margin: 0;
+        height: 10vh;
+    }
+
+    .links{
+        border: none;
+        align-items: center;
+
+    }
+
+    .links a{
+        padding: 10px;
+        transition: .5s;
+    }
+
+    .links a:hover{
+        background-color: #fff;
+        color: #000;
+        border-radius: 20px;
+
+    }
+
+    .img--logo-container{
+        margin-top: 15px;
+    }
+}
