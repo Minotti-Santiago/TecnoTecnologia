@@ -89,6 +89,37 @@ header{
 
 /*--------------------------------------------MAIN SECTION--------------------------------------------*/
 
+/*--------------------------------------------FOOTER SECTION--------------------------------------------*/
+
+footer{
+    max-width: 1920px;
+    min-height: 10vh;
+    background-color: #181818;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.text--container{
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+
+.center--line{
+    border: 1px solid #fff;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.social--media-icon svg{
+    width: 35px;
+    margin: 0 7px;
+    fill: #fff;
+    margin-bottom: 10px;
+}
+
 
 
 /*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
