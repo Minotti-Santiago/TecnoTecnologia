@@ -179,4 +179,49 @@ footer{
     .img--logo-container{
         margin-top: 15px;
     }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .center--line{
+        width: 1px;
+        height: 8.5vh;
+    }
+
+    .text--container{
+        width: 50%;
+        margin: 0 0 0 20px;
+        
+    }
+
+    .social--media-container{
+        display: flex;
+        width: 50%;
+        justify-content: end;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .social--media-icon{
+        display: flex;
+        
+    }
+
+    .social--media-icon:last-child{
+        margin-right: 20px;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    .img--logo-container img{
+        width: 70px;
+    }
+
+    .img--logo-container{
+        margin: 5px 0 0 10px;
+    }
+
 }
