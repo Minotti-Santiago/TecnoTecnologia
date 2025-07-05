@@ -119,13 +119,15 @@ header{
 /*--------------------------------------------MAIN SECTION--------------------------------------------*/
 
 main{
+    width: 100%;
     max-width: 1920px;
     display: flex;
     flex-direction: column;
 }
 
 .card {
-    width: 85%;
+    max-width: 400px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -140,11 +142,14 @@ main{
 .card img{
     height: 40vh;
     border-radius: 20px;
+    width: 100%;
 }
 
+.grid--container{
+    display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
 
-
-
+}
 
 
 /*--------------------------------------------FOOTER SECTION--------------------------------------------*/
