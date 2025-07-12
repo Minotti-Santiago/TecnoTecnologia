@@ -176,13 +176,14 @@ main{
 
 .marcas{
     display: flex;
-    
+    background-color: #fff;
 }
 
 .marcas--container img{
     width: 40vw;
-    height: 10vh;
+    height: 7vh;
     animation: movility 10s linear infinite;
+    margin: 0 10px;
 }
 
 .title--marcas{
@@ -260,6 +261,11 @@ footer{
         flex-direction: row;
         height: 10vh;
         position: relative;
+    }
+
+    .header--container{
+        position: sticky;
+        top: 0;
     }
 
     header{

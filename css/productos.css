@@ -172,6 +172,11 @@ footer{
         position: relative;
     }
 
+    .header--container{
+        position: sticky;
+        top: 0;
+    }
+
     header{
         display: flex;
         justify-content: space-between;
