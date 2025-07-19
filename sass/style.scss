@@ -1,0 +1,9 @@
+//BASE SECTION
+@use "base/reset";
+
+//LAYOUT SECTION
+@use "layout/header";
+@use "layout/footer";
+
+//PAGES SECTION
+@use "pages/_index.scss"
