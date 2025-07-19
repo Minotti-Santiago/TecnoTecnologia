@@ -328,6 +328,12 @@ main {
   .title--offerts-container {
     font-size: 2rem;
   }
+  .card {
+    height: 32vh;
+  }
+  .card img {
+    height: 30vh;
+  }
 }
 /*--------------------------------------------ANIMATION SECTION--------------------------------------------*/
 @keyframes movility {
@@ -337,6 +343,93 @@ main {
   100% {
     transform: translateX(250%);
   }
+}
+body {
+  background-image: url(../../images/fondo-contactanos.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.contact--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form--title {
+  font-size: 2.3rem;
+}
+
+.form--form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form--input-container {
+  display: grid;
+  grid-template-areas: "nombre" "apellido" "email" "mensaje";
+  gap: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.apellido {
+  grid-area: apellido;
+}
+
+.email {
+  grid-area: email;
+}
+
+.mensaje {
+  grid-area: mensaje;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 0;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form--guide {
+  margin: 0 0 5px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input::placeholder {
+  padding-left: 7px;
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+  height: 10vh;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+textarea::placeholder {
+  color: #fff;
+  padding: 5px 0 0 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
