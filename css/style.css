@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(24, 23, 23, 0.9607843137);
 }
 
 /*--------------------------------------------HEADER SECTION--------------------------------------------*/
@@ -238,7 +239,6 @@ footer {
   height: 30vh;
   display: flex;
   align-items: center;
-  color: #fff;
   text-shadow: 0 0 30px #000;
 }
 
@@ -248,6 +248,7 @@ main {
   max-width: 1920px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .card {
@@ -259,10 +260,11 @@ main {
   height: 60vh;
   margin: 30px auto 0;
   border-radius: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.4666666667);
+  border: 2px solid rgba(255, 255, 255, 0.6392156863);
   padding: 10px;
   transition: 0.5s;
   font-family: sans-serif;
+  color: #fff;
 }
 
 .card img {
@@ -316,11 +318,16 @@ main {
   margin: 0 0 15px 0;
 }
 
+.link--ofertas {
+  text-decoration: none;
+  color: #fff;
+}
+
 /*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
 @media screen and (min-width: 900px) {
   .card:hover {
-    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.4);
-    scale: 102%;
+    box-shadow: 0 5px 0 rgba(255, 255, 255, 0.6901960784), 0 0 5px #fff9ff;
+    scale: 105%;
   }
   .offerts--container {
     height: 60vh;
@@ -348,15 +355,28 @@ main {
   }
 }
 /*--------------------------------------------MAIN SECTION--------------------------------------------*/
+.section--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact--form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  border: 2px solid #fff;
+  width: 30%;
+  border-radius: 20px;
+  animation: parpadeo both ease-in-out infinite 2s;
 }
 
 .form--title {
   font-size: 2.3rem;
+  color: #fff;
+  margin: 20px 0 30px;
 }
 
 .form--form {
@@ -392,7 +412,7 @@ main {
 
 input {
   border: 0;
-  border: 1px solid #000;
+  border-bottom: 1px solid #fff;
   border-radius: 4px;
   width: 100%;
   padding: 8px 0;
@@ -407,23 +427,26 @@ label {
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: #fff;
 }
 
 input::placeholder {
   padding-left: 7px;
+  color: #fff;
 }
 
 textarea {
   resize: none;
   height: 15vh;
   background-color: transparent;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-radius: 5px;
   color: #fff;
 }
 
 textarea::placeholder {
   padding: 5px 0 0 7px;
+  color: #fff;
 }
 
 .button {
@@ -433,18 +456,30 @@ textarea::placeholder {
 
 .button input {
   width: 40%;
-  border: 1px solid #000;
+  border-bottom: 1px solid #fff;
   transition: 0.5s;
+  color: #fff;
 }
 
 /*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
 @media screen and (min-width: 900px) {
   .form--input-container {
     grid-template-areas: "nombre apellido" "email email" "mensaje mensaje";
-    width: 40%;
   }
   .button {
     align-items: start;
+  }
+}
+/*--------------------------------------------ANIMATION SECTION--------------------------------------------*/
+@keyframes parpadeo {
+  0% {
+    box-shadow: 0 0 5px #fff9ff;
+  }
+  50% {
+    box-shadow: 0 0 15px #fff9ff;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff9ff;
   }
 }
 
