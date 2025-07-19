@@ -1,10 +1,4 @@
-body{
-    background-image: url(../../images/fondo-contactanos.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-
-}
+/*--------------------------------------------MAIN SECTION--------------------------------------------*/
 
 .contact--form{
     display: flex;
@@ -55,12 +49,11 @@ body{
 
 input{
     border: 0;
-    border-bottom: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 4px;
     width: 100%;
     padding: 8px 0;
     background-color: transparent;
-    color: #fff;;
 }
 
 .form--guide{
@@ -76,20 +69,44 @@ label{
 
 input::placeholder{
     padding-left: 7px;
-    color: #fff;
 }
 
 textarea{
     resize: none;
-    height: 10vh;
+    height: 15vh;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 5px;
     color: #fff;
 }
 
 textarea::placeholder{
-    color:#fff;
     padding: 5px 0 0 7px;
 }
 
+.button{
+    width: 100%;
+    align-items: center;
+}
+
+.button input{
+    width: 40%;
+    border:1px solid #000;
+    transition: .5s;
+}
+
+/*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
+@media screen and (min-width:900px){
+    .form--input-container{
+        grid-template-areas: 
+        "nombre apellido"
+        "email email"
+        "mensaje mensaje"
+        ;
+        width: 40%;
+    }
+
+    .button{
+        align-items: start;
+    }
+}

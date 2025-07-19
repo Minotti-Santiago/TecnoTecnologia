@@ -110,7 +110,7 @@ main{
 @media screen and (min-width:900px){
 
 .card:hover{
-    box-shadow:  0 7px 0 #0006;
+    box-shadow:  0 5px 0 #0006;
     scale: 102%;
 
 }
@@ -131,13 +131,13 @@ main{
     }
 
     .card{
-        height: 32vh;
+        min-height: 30vh;
+        height: 20vh;
     }
 
     .card img{
-        height: 30vh;
+        height: 20vh;
     }
-
 }
 
 /*--------------------------------------------ANIMATION SECTION--------------------------------------------*/
