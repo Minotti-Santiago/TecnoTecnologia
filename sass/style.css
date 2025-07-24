@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgba(24, 23, 23, 0.9607843137);
-  min-height: 100vh;
 }
 
 /*--------------------------------------------HEADER SECTION--------------------------------------------*/
@@ -356,10 +355,6 @@ main {
   }
 }
 /*--------------------------------------------MAIN SECTION--------------------------------------------*/
-main {
-  grid-area: main;
-}
-
 .section--container {
   width: 100%;
   display: flex;
@@ -373,7 +368,7 @@ main {
   align-items: center;
   margin-top: 20px;
   border: 2px solid #fff;
-  width: 360px;
+  width: 90%;
   border-radius: 20px;
   animation: parpadeo both ease-in-out infinite 2s;
 }
@@ -435,6 +430,11 @@ label {
   color: #fff;
 }
 
+input::-moz-placeholder {
+  padding-left: 7px;
+  color: #fff;
+}
+
 input::placeholder {
   padding-left: 7px;
   color: #fff;
@@ -446,6 +446,11 @@ textarea {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 5px;
+  color: #fff;
+}
+
+textarea::-moz-placeholder {
+  padding: 5px 0 0 7px;
   color: #fff;
 }
 
@@ -471,9 +476,6 @@ textarea::placeholder {
   .form--input-container {
     grid-template-areas: "nombre apellido" "email email" "mensaje mensaje";
   }
-  .contact--form {
-    width: 500px;
-  }
   .button {
     align-items: start;
   }
@@ -489,62 +491,4 @@ textarea::placeholder {
   100% {
     box-shadow: 0 0 5px #fff9ff;
   }
-}
-.about--container {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  width: 90%;
-  margin: auto;
-  max-width: 1500px;
-}
-
-.sobre--nosotros-title {
-  color: #fff;
-  margin: 50px auto;
-}
-
-.about--text {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  margin: 0 0 100px;
-  width: 100%;
-  font-size: 1.1rem;
-}
-
-.about--text img {
-  border-radius: 10px;
-  animation: parpadeo infinite linear 1s;
-  border: 2px solid #fff;
-}
-
-/*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
-@media screen and (min-width: 700px) {
-  .text-1 {
-    flex-direction: row;
-  }
-  .text-2 {
-    flex-direction: row-reverse;
-  }
-  .about--text {
-    align-items: center;
-  }
-  .about--text img {
-    height: 30vh;
-  }
-}
-/*--------------------------------------------ANIMATION SECTION--------------------------------------------*/
-@keyframes parpadeo {
-  0% {
-    box-shadow: 0 0 5px #fff9ff;
-  }
-  50% {
-    box-shadow: 0 0 20px #fff9ff;
-  }
-  100% {
-    box-shadow: 0 0 5px #fff9ff;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+.about--container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+.sobre--nosotros-title{
+    color: #fff;
+    margin: 50px auto;
+}
+
+.about--text{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 0 0 100px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.about--text img{
+    border-radius: 10px;
+    animation: parpadeo infinite linear 1s;
+    border: 2px solid #fff;
+}
+
+/*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
+@media screen and (min-width:700px){
+    .text-1{
+        flex-direction: row;
+    }
+
+    .text-2{
+        flex-direction: row-reverse;
+    }
+
+    .about--text{
+        align-items: center;
+    }
+
+    .about--text img{
+        height: 30vh;
+    }
+}
+
+
+
+
+
+
+/*--------------------------------------------ANIMATION SECTION--------------------------------------------*/
+
+@keyframes parpadeo{
+    0%{
+        box-shadow: 0 0 5px #fff9ff;
+    }
+
+    50%{
+        box-shadow: 0 0 20px #fff9ff;}
+
+    100%{
+        box-shadow: 0 0 5px #fff9ff;
+    }
+}
