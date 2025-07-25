@@ -1,0 +1,19 @@
+.offert--container{
+    background-color: #a52c2c8d;
+    height:5vh;
+    display: flex;
+    align-items: center;
+    width:fit-content;
+    padding: 0 10px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.offerts--outstanding-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}

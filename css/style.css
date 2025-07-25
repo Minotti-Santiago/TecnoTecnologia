@@ -266,6 +266,16 @@ main {
   transition: 0.5s;
   font-family: sans-serif;
   color: #fff;
+  position: relative;
+  gap: 30px;
+}
+
+.card h3 {
+  font-size: 1rem;
+}
+
+.card p {
+  opacity: 0.9;
 }
 
 .card img {
@@ -289,6 +299,10 @@ main {
   color: #fff;
   background-color: #000;
   padding: 10px 0;
+}
+
+.title h3 {
+  font-size: 1.3rem;
 }
 
 .marcas--container {
@@ -339,7 +353,7 @@ main {
     font-size: 2rem;
   }
   .card {
-    min-height: 30vh;
+    min-height: 40vh;
     height: 20vh;
   }
   .card img {
@@ -365,6 +379,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 
 .contact--form {
@@ -375,7 +390,7 @@ main {
   border: 2px solid #fff;
   width: 360px;
   border-radius: 20px;
-  animation: parpadeo both ease-in-out infinite 2s;
+  animation: parpadeo both ease-in-out infinite 1s;
 }
 
 .form--title {
@@ -472,7 +487,7 @@ textarea::placeholder {
     grid-template-areas: "nombre apellido" "email email" "mensaje mensaje";
   }
   .contact--form {
-    width: 500px;
+    width: 700px;
   }
   .button {
     align-items: start;
@@ -545,6 +560,25 @@ textarea::placeholder {
   100% {
     box-shadow: 0 0 5px #fff9ff;
   }
+}
+.offert--container {
+  background-color: rgba(165, 44, 44, 0.5529411765);
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0 10px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.offerts--outstanding-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 /*# sourceMappingURL=style.css.map */

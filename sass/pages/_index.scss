@@ -43,6 +43,16 @@ main{
     transition: .5s;
     font-family: sans-serif;
     color: #fff;
+    position: relative;
+    gap: 30px;
+}
+
+.card h3{
+    font-size: 1rem;
+}
+
+.card p{
+    opacity: 0.9;
 }
 
 .card img{
@@ -54,8 +64,7 @@ main{
 
 .grid--container{
     display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .title{
@@ -68,6 +77,11 @@ main{
     background-color: #000;
     padding: 10px 0;
 }
+
+.title h3{
+    font-size: 1.3rem;
+}
+
 
 .marcas--container{
     display: flex;
@@ -125,7 +139,7 @@ main{
     }
 
     .card{
-        min-height: 30vh;
+        min-height: 40vh;
         height: 20vh;
     }
 
