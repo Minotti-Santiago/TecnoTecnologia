@@ -53,11 +53,6 @@
 
 }
 
-
-
-
-
-
 /*--------------------------------------------ANIMATION SECTION--------------------------------------------*/
 
 @keyframes parpadeo{
@@ -66,7 +61,8 @@
     }
 
     50%{
-        box-shadow: 0 0 20px #fff9ff;}
+        box-shadow: 0 0 20px #fff9ff;
+    }
 
     100%{
         box-shadow: 0 0 5px #fff9ff;

@@ -156,7 +156,10 @@ header {
     width: 70px;
   }
   .img--logo-container {
-    margin: 5px 0 0 10px;
+    margin: 0;
+    width: 10vw;
+    display: flex;
+    align-items: center;
   }
 }
 /*--------------------------------------------FOOTER SECTION--------------------------------------------*/
