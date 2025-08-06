@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -15,4 +16,40 @@ body{
     align-items: center;
     background-color: #181717f5;
     min-height: 100vh;
+    position: relative;
 }
+
+.btn-go-up svg{
+    width: 25px;
+}
+
+.btn-go-up{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    z-index: 20;
+    animation: up-down 1s linear infinite;
+    border: 2px solid #000;
+}
+
+@keyframes up-down {
+    0%{
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{  
+        transform: scale(1.0);
+    }
+    
+}
+

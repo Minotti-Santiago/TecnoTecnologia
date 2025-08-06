@@ -1,22 +1,21 @@
 /*--------------------------------------------FOOTER SECTION--------------------------------------------*/
 
-.footer--container{
-    background-color: #181818;
-    width: 100%;
-    margin-top: 100px;
-}
-
-
 footer{
-    max-width: 1920px;
-    min-height: 10vh;
+    width: 100%;
+    height: 100px;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin: auto;
     font-family: sans-serif;
+    background-color: #181818;
+}
+
+.footer--container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;   
 }
 
 .text--container{
@@ -40,14 +39,15 @@ footer{
 /*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
 
 @media screen and (min-width:900px){
-    footer{
+
+    .footer--container{
         flex-direction: row;
-        justify-content: space-between;
+        height: 100%;
     }
 
     .center--line{
         width: 1px;
-        height: 8.5vh;
+        height: 90%;
     }
 
     .text--container{

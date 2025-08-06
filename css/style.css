@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,22 +14,55 @@ body {
   align-items: center;
   background-color: rgba(24, 23, 23, 0.9607843137);
   min-height: 100vh;
+  position: relative;
 }
 
+.btn-go-up svg {
+  width: 25px;
+}
+
+.btn-go-up {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  z-index: 20;
+  animation: up-down 1s linear infinite;
+  border: 2px solid #000;
+}
+
+@keyframes up-down {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*--------------------------------------------HEADER SECTION--------------------------------------------*/
 .header--container {
-  background-color: #181818;
-  width: 100%;
-  height: 10vh;
-  z-index: 1;
-  max-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1920px;
+  height: 100px;
 }
 
 header {
-  max-width: 1920px;
-  margin: auto;
+  width: 100%;
   display: flex;
-  height: 10vh;
+  height: 100px;
+  background-color: #181818;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .img--logo-container img {
@@ -125,6 +159,7 @@ header {
   header {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   .list--container {
     flex-direction: row;
@@ -163,22 +198,22 @@ header {
   }
 }
 /*--------------------------------------------FOOTER SECTION--------------------------------------------*/
-.footer--container {
-  background-color: #181818;
-  width: 100%;
-  margin-top: 100px;
-}
-
 footer {
-  max-width: 1920px;
-  min-height: 10vh;
+  width: 100%;
+  height: 100px;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  margin: auto;
   font-family: sans-serif;
+  background-color: #181818;
+}
+
+.footer--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .text--container {
@@ -201,13 +236,13 @@ footer {
 
 /*--------------------------------------------MEDIA QUERIES SECTION--------------------------------------------*/
 @media screen and (min-width: 900px) {
-  footer {
+  .footer--container {
     flex-direction: row;
-    justify-content: space-between;
+    height: 100%;
   }
   .center--line {
     width: 1px;
-    height: 8.5vh;
+    height: 90%;
   }
   .text--container {
     width: 50%;
@@ -356,8 +391,7 @@ main {
     font-size: 2rem;
   }
   .card {
-    min-height: 40vh;
-    height: 20vh;
+    height: 400px;
   }
   .card img {
     height: 20vh;
