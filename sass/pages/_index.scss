@@ -82,35 +82,6 @@ main{
     font-size: 1.3rem;
 }
 
-
-.marcas--container{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-
-.marcas{
-    display: flex;
-    background-color: #fff;
-}
-
-.marcas--container img{
-    width: 40vw;
-    height: 7vh;
-    animation: movility 10s linear infinite;
-    margin: 0 10px;
-}
-
-.title--marcas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title--marcas h2{
-    margin: 0 0 15px 0;
-}
-
 .link--ofertas{
     text-decoration: none;
     color: #fff;
